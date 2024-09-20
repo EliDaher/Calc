@@ -98,4 +98,5 @@ body{
     font-size: 13;
     font-weight: 400;
     margin: 0px;
+    user-select: none;
 }

@@ -51,3 +51,19 @@ function calcFinalRes(){
         lastInput.value = opeString
     }
 }
+
+document.addEventListener("keydown", (e) => {
+
+    //get the user input from the keyboard
+
+    var calcNumber = ['1','2','3','4','5','6','7','8','9','.']
+    var clacOpe = ['/','*','+','-']
+    if(calcNumber.includes(e.key)){
+        addNumber(e.key)
+    }else if(clacOpe.includes(e.key)){
+        doCalc(e.key)
+    }else if(e.key == 'Enter' || e.key == '='){
+        calcFinalRes()
+    }
+
+})
