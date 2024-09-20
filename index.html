@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <form action="" class="calculator">
+
+            <div class="resBox">
+                <input id="lastInput" type="text" class="res lastIn" value="" disabled>
+                <input id="result" type="text" class="res" value="" disabled>
+            </div>
+
+            <div class="Btns">
+
+                <div>
+                    <input type="button" value="C" class="calcBtn" onclick="clearRes()">
+                    <input type="button" value="DE" class="calcBtn" onclick="deleteLastInput()">
+                    <input type="button" value="." class="calcBtn" onclick="addNumber('.')">
+                    <input type="button" value="/" class="calcBtn" onclick="doCalc('/')">
+                </div>
+
+                <div>
+                    <input type="button" value="7" class="calcBtn" onclick="addNumber('7')">
+                    <input type="button" value="8" class="calcBtn" onclick="addNumber('8')">
+                    <input type="button" value="9" class="calcBtn" onclick="addNumber('9')">
+                    <input type="button" value="*" class="calcBtn" onclick="doCalc('*')">
+                </div>
+
+                <div>
+                    <input type="button" value="4" class="calcBtn" onclick="addNumber('4')">
+                    <input type="button" value="5" class="calcBtn" onclick="addNumber('5')">
+                    <input type="button" value="6" class="calcBtn" onclick="addNumber('6')">
+                    <input type="button" value="+" class="calcBtn" onclick="doCalc('+')">
+                </div>
+
+                <div>
+                    <input type="button" value="1" class="calcBtn" onclick="addNumber('1')">
+                    <input type="button" value="2" class="calcBtn" onclick="addNumber('2')">
+                    <input type="button" value="3" class="calcBtn" onclick="addNumber('3')">
+                    <input type="button" value="-" class="calcBtn" onclick="doCalc('-')">
+                </div>
+
+                <div>
+                    <input type="button" value="00" class="calcBtn" onclick="addNumber('00')">
+                    <input type="button" value="0" class="calcBtn" onclick="addNumber('0')">
+                    <input id="equal" type="button" value="=" class="calcBtn" onclick="calcFinalRes()">
+                </div>
+
+            </div>
+            
+        </form>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
