@@ -32,7 +32,9 @@ function doCalc(ope){
 }
 
 function calcFinalRes(){
-    var opeString = lastInput.value + resultBox.value + ' = '
-    resultBox.value = eval(lastInput.value + resultBox.value)
-    lastInput.value = opeString
+    if(resultBox.value != ''){
+        var opeString = lastInput.value + resultBox.value + ' = '
+        resultBox.value = eval(lastInput.value + resultBox.value)
+        lastInput.value = opeString
+    }
 }
